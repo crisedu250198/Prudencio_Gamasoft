@@ -47,7 +47,9 @@
             </div>
             <div class="containerBot__ContainerIconos">
                 <a href="../pages/favoritos.html"><img src="../images/corazon.png" alt="Favoritos"> </a>
-                <a href="../pages/iniciar-sesion.html"><img src="../images/usuario.png" alt="Iniciar Sesion/Registrarte"></a>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../images/usuario.png" alt="Iniciar Sesion/Registrarte">
+                </button>
                 <a href=""><img src="../images/carrito.png" alt="Carrito"></a>    
             </div>
             
@@ -90,6 +92,42 @@
            
     </header>
     <main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title" id="exampleModalLabel">INICIAR SESION</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post"> 
+                        <div>
+                            <h2>Ya soy cliente</h2>
+                        </div>
+                        <div>
+                            <label for="">Correo electrónico</label>
+                            <br>
+                            <input type="email" name="email_login" id="email_login" placeholder="Ingrese su correo electrónico">
+                        </div>
+                        <div>
+                            <label for="">Contraseña</label>
+                            <br>
+                            <input type="password" name="pass_login" id="pass_login" placeholder="Ingrese su contraseña">
+                        </div>
+                        <div>
+                            <input type="button" value="INGRESAR">
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                  <input type="button" value="Registrar nueva cuenta">
+                  <input type="button" value="Continuar con Facebook">
+                  <input type="button" value="Continuar con Google +">                
+                </div>
+              </div>
+            </div>
+        </div>
         <div class="containerTituloFav">
             <h1>Favoritos</h1>
         </div>
@@ -438,5 +476,7 @@
             </article>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 </body>
 </html>
