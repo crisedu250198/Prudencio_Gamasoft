@@ -497,10 +497,45 @@ a {
     align-items: center;
     border-radius: 5px;
     border: 1px solid #ccc; }
-  .containerProdArmar img {
-    height: 190px;
-    width: 190px;
-    margin-top: 2rem; }
+    .containerProdArmar article h4 {
+      padding: 12px 12px 0px 12px;
+      font-weight: 500;
+      font-size: 16px;
+      color: black;
+      margin-bottom: 20px; }
+    .containerProdArmar article img {
+      height: 190px;
+      width: 190px;
+      margin-top: 0.5rem; }
+    .containerProdArmar article div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 0px; }
+      .containerProdArmar article div h5 {
+        background-color: #0c487a;
+        margin-left: -1px;
+        padding: 5px 16px;
+        margin-top: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 0px 7px 7px 0px; }
+      .containerProdArmar article div button {
+        width: 60px;
+        height: 35px;
+        font-size: 25px;
+        margin-top: -5px;
+        margin-right: 1rem;
+        cursor: pointer;
+        border: none;
+        background-color: #2983BC;
+        border-color: #2983BC;
+        border-radius: 5px;
+        color: #fff; }
+      .containerProdArmar article div button:hover {
+        background: #a8a8a8; }
 
 .containerListComponentes {
   grid-area: nava;
