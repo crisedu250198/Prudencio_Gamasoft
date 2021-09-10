@@ -105,18 +105,18 @@
                         <div>
                             <h2>Ya soy cliente</h2>
                         </div>
-                        <div>
+                        <div id="modal-body--input">
                             <label for="">Correo electrónico</label>
                             <br>
                             <input type="email" name="email_login" id="email_login" placeholder="Ingrese su correo electrónico">
                         </div>
-                        <div>
+                        <div id="modal-body--input">
                             <label for="">Contraseña</label>
                             <br>
                             <input type="password" name="pass_login" id="pass_login" placeholder="Ingrese su contraseña">
                         </div>
-                        <div>
-                            <input type="button" value="INGRESAR">
+                        <div class="modal-body--button">
+                            <input type="button" value="INGRESAR" >
                         </div>
                     </form>
                     
@@ -195,31 +195,69 @@
         </section>
         <div class="containerSecciones">
             <h2>PRODUCTOS DESTACADOS</h2>
-            <section>
-                <article>
-                    <img src="images/coolerMaster.jpg" alt="Carrucel de imagenes">
-                </article>
-                <article>
-                    <img src="images/tecladoredragon.jpg" alt="Carrucel de imagenes">
-                </article>
-                <article>
-                    <img src="images/ramhikvision.png" alt="Carrucel de imagenes">
-                </article>
-            </section>
+            <div>
+                <button alt="Anterior"><img src="images/flechaAnterior.png" alt="Anterior"></button>
+                <section>
+                    <article>
+                        <img src="images/coolerMaster.jpg" alt="Carrucel de imagenes">
+                        <h4> Fuente Cooler Master Elite V4 500W 80 Plus</h4>
+                        <div>
+                            <h5> <small>Precio Web</small> <br>$ 5899.00</h5>
+                            <button>Comprar</button>
+                        </div>  
+                    </article>
+                    <article>
+                        <img src="images/tecladoredragon.jpg" alt="Carrucel de imagenes">
+                        <h4> Fuente Cooler Master Elite V4 500W 80 Plus</h4>
+                        <div>
+                            <h5> <small>Precio Web</small> <br>$ 5899.00</h5>
+                            <button>Comprar</button>
+                        </div>  
+                    </article>
+                    <article>
+                        <img src="images/ramhikvision.png" alt="Carrucel de imagenes">
+                        <h4> Fuente Cooler Master Elite V4 500W 80 Plus</h4>
+                        <div>
+                            <h5> <small>Precio Web</small> <br>$ 5899.00</h5>
+                            <button>Comprar</button>
+                        </div>  
+                    </article>
+                </section>
+                <button alt="Siguiente"><img src="images/flechaSiguiente.png" alt="Siguiente"></button>
+            </div>
         </div>
         <div class="containerSecciones">
             <h2>NOVEDADES</h2>
-            <section>
-                <article>
-                    <img src="images/gpu3080ventus.png" alt="Carrucel de imagenes">
-                </article>
-                <article>
-                    <img src="images/motherboardAdrusb560.png" alt="Carrucel de imagenes">
-                </article>
-                <article>
-                    <img src="images/motherboardasrockh110pro.png" alt="Carrucel de imagenes">
-                </article>
-            </section>
+            <div>
+                <button alt="Anterior"><img src="images/flechaAnterior.png" alt="Anterior"></button>
+                <section>
+                    <article>
+                        <img src="images/gpu3080ventus.png" alt="Carrucel de imagenes">
+                        <h4> Fuente Cooler Master Elite V4 500W 80 Plus</h4>
+                        <div>
+                            <h5> <small>Precio Web</small> <br>$ 5899.00</h5>
+                            <button>Comprar</button>
+                        </div>  
+                    </article>
+                    <article>
+                        <img src="images/motherboardAdrusb560.png" alt="Carrucel de imagenes">
+                        <h4> Fuente Cooler Master Elite V4 500W 80 Plus</h4>
+                        <div>
+                            <h5> <small>Precio Web</small> <br>$ 5899.00</h5>
+                            <button>Comprar</button>
+                        </div>  
+                    </article>
+                    <article>
+                        <img src="images/motherboardasrockh110pro.png" alt="Carrucel de imagenes">
+                        <h4> Fuente Cooler Master Elite V4 500W 80 Plus</h4>
+                        <div>
+                            <h5> <small>Precio Web</small> <br>$ 5899.00</h5>
+                            <button>Comprar</button>
+                        </div>  
+                    </article>
+                </section>
+                <button alt="Siguiente"><img src="images/flechaSiguiente.png" alt="Siguiente"></button>
+            </div>
         </div>
     </main>
     <footer>
@@ -239,24 +277,25 @@
                     Atención telefónica: (011) 7700-0348
                     <br>
                     Whatsapp: +54 9 11-2391-4759</p>
-                <h4>Menu</h4>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="../pages/categorias.html">Tienda</a>
-                        </li>
-                        <li>
-                            <a href="../pages/ofertas.html">Ofertas</a>
-                        </li>
-                        <li>
-                            <a href="https://www.google.com/maps" target="_blank">Sucursales</a>
-                        </li>
-                    </ul>
-                </nav>
-
+                <div class="footer__containerAyuda--Menu">
+                    <h4>Menu</h4>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="../pages/categorias.html">Tienda</a>
+                            </li>
+                            <li>
+                                <a href="../pages/ofertas.html">Ofertas</a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/maps" target="_blank">Sucursales</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>    
             </article>
             <article>
                 <h3 id="Nosotros">Nosotros</h3>
@@ -282,13 +321,13 @@
                 <nav class="footer__Redes">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank" ><img src="../images/facebook.png" alt="Icono de Facebook" ></a>
+                            <a href="https://www.facebook.com/" target="_blank" ><img src="../images/facebookColor.png" alt="Icono de Facebook" ></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/"target="_blank"><img src="../images/instagram.png" alt="Icono de instagram"></a>
+                            <a href="https://www.instagram.com/"target="_blank"><img src="../images/instagramColor.png" alt="Icono de instagram"></a>
                         </li>
                         <li>
-                            <a href="https://web.whatsapp.com/" target="_blank"><img src="../images/whatsapp.png" alt="Icono de Whatsapp"></a>
+                            <a href="https://web.whatsapp.com/" target="_blank"><img src="../images/whatsappColor.png" alt="Icono de Whatsapp"></a>
                         </li>
                     </ul>
                 </nav>
