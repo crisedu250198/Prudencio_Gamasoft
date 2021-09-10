@@ -349,8 +349,8 @@ a {
 .containerProdCateg {
   grid-area: prod;
   display: grid;
-  grid-template-rows: repeat(5, 347px);
-  grid-template-columns: repeat(3, 270px);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   justify-content: space-around;
@@ -364,10 +364,45 @@ a {
     align-items: center;
     border-radius: 5px;
     border: 1px solid #ccc; }
-  .containerProdCateg img {
-    height: 190px;
-    width: 190px;
-    margin-top: 2rem; }
+    .containerProdCateg article h4 {
+      padding: 12px 12px 0px 12px;
+      font-weight: 500;
+      font-size: 16px;
+      color: black;
+      margin-bottom: 20px; }
+    .containerProdCateg article img {
+      height: 190px;
+      width: 190px;
+      margin-top: 0.5rem; }
+    .containerProdCateg article div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 0px; }
+      .containerProdCateg article div h5 {
+        background-color: #0c487a;
+        margin-left: -1px;
+        padding: 5px 16px;
+        margin-top: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 0px 7px 7px 0px; }
+      .containerProdCateg article div button {
+        width: 90px;
+        height: 35px;
+        font-size: 20px;
+        margin-top: -5px;
+        margin-right: 1rem;
+        cursor: pointer;
+        border: none;
+        background-color: #2983BC;
+        border-color: #2983BC;
+        border-radius: 5px;
+        color: #fff; }
+      .containerProdCateg article div button:hover {
+        background: #a8a8a8; }
 
 .bannerArmarPc {
   width: 100%;
@@ -482,8 +517,8 @@ a {
 .containerProdArmar {
   margin-top: 2rem;
   display: grid;
-  grid-template-rows: repeat(3, 347px);
-  grid-template-columns: repeat(3, 270px);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   justify-content: space-around;
