@@ -461,7 +461,6 @@ a {
 
 .containerArmarPC {
   display: grid;
- 
   grid-template-areas: "otrooa proda"
  "nava proda"
  "otroa proda";
@@ -477,7 +476,10 @@ a {
 .containerPresupuesto {
   display: flex;
   flex-direction: column;
+  margin-top: -4rem;
+  position: relative;
   height: 15rem;
+  width: 65%;
   background: white;
   border-radius: 5px 5px 0px 0px;
   box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; }
