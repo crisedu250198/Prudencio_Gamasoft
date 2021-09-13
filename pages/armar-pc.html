@@ -38,7 +38,6 @@
                     </ul>
                 </nav>   
             </div>
-            
             <div class="containerBot container">
                 
                 <a href="../index.html"><img src="../images/LogoBlanco.png" alt="Logo" class="containerBot__Logo"></a>
@@ -161,9 +160,9 @@
                     
                 </div>
                 <div class="modal-footer">
-                <input type="button" value="Registrar nueva cuenta">
-                <input type="button" value="Continuar con Facebook">
-                <input type="button" value="Continuar con Google +">                
+                <input type="button" value="Registrar nueva cuenta" class="backgroundRegistrarse">
+                <input type="button" value="Continuar con Facebook" class="backgroundFacebook">
+                <input type="button" value="Continuar con Google +" class="backgroundGoogle">                
                 </div>
             </div>
             </div>
@@ -345,17 +344,19 @@
         
     </main>
     <footer>
-        <div class="containerFormSuscripcion">
-            <form action="https://formspree.io/f/xknkkdzp"
-            method="POST">
-                <label for="">Recibí las mejores ofertas en tu e-mail</label>
-                <input type="text" name="Nombre" id="entrada_Nombre" placeholder="  Ingresa tu nombre" class="inputText">
-                <input type="email" name="Email" id="entrada_Email" placeholder="   Ingresa tu email" class="inputText">
-                <button>Suscribite</button>
-            </form>
+        <div class="containerBackground">
+            <div class="containerFormSuscripcion container">
+                <form action="https://formspree.io/f/xknkkdzp"
+                method="POST">
+                    <label for="">Recibí las mejores ofertas en tu e-mail</label>
+                    <input type="text" name="Nombre" id="entrada_Nombre" placeholder="  Ingresa tu nombre" class="inputText">
+                    <input type="email" name="Email" id="entrada_Email" placeholder="   Ingresa tu email" class="inputText">
+                    <button>Suscribite</button>
+                </form>
+            </div>
         </div>
-        <section class="footer__containerAyuda">
-            <article>
+        <section class="footer__containerAyuda row">
+            <article class="col-4">
                 <h3>Información</h3>
                 <p> Realizá tu compra online y recibila en tu domicilio o retirá por nuestro local en Almagro
                     <br>
@@ -382,14 +383,14 @@
                     </nav>
                 </div>    
             </article>
-            <article>
+            <article class="col-4">
                 <h3 id="Nosotros">Nosotros</h3>
                 <p> En Gamasoft buscamos destacar por nuestro conocimiento e intentamos establecernos
                      como la opción ideal para sus compras de tecnología. 
                      Todos nuestros vendedores se encuentran altamente 
                     capacitados para asesorarlo y ofrecerle exactamente lo que necesita.</p>
             </article>
-            <article>
+            <article class="col-4">
                 <h3>Contactos</h3>
                 <p> E-mail: ventas@gamasoft.com.ar
                     <br>
@@ -406,7 +407,7 @@
                 <nav class="footer__Redes">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank" ><img src="../images/facebookColor.png" alt="Icono de Facebook" ></a>
+                            <a href="https://www.facebook.com/" target="_blank" ><img src="../images/facebook.png" alt="Icono de Facebook" ></a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/"target="_blank"><img src="../images/instagramColor.png" alt="Icono de instagram"></a>

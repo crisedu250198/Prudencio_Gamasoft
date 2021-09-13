@@ -38,7 +38,6 @@
                     </ul>
                 </nav>   
             </div>
-            
             <div class="containerBot container">
                 
                 <a href="index.html"><img src="images/LogoBlanco.png" alt="Logo" class="containerBot__Logo"></a>
@@ -52,84 +51,67 @@
                 <!--Menu responsive-->
 
                 <div class="menuResponsive">
-
                     <button class="btn btn-primary btn-primary--cfg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="images/hambur.svg" class="btn-menu--size"></button>
-
-            <div class="offcanvas offcanvas-end offcanvas--back" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Menú</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-
-
-                    <div class="containerBot__ContainerIconos">
-                        <a href="pages/favoritos.html"><img src="images/corazon.png" alt="Favoritos"> </a>
-                        <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="offcanvas offcanvas-end offcanvas--back" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Menú</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <div class="containerBot__ContainerIconos">
+                            <a href="pages/favoritos.html"><img src="images/corazon.png" alt="Favoritos"> </a>
+                            <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="images/usuario.png" alt="Iniciar Sesion/Registrarte">
-                        </button>
-                        <a href=""><img src="images/carrito.png" alt="Carrito"></a>    
+                            </button>
+                            <a href=""><img src="images/carrito.png" alt="Carrito"></a>    
+                        </div>
+                        </div>
                     </div>
+
+                 </div>
+            <!--HAMBURGUESA-->
+
+            <!--CONSERVAR ICONOS -->
+            <div class="menu-no-phone">
+
+                <div class="containerBot__ContainerIconos">
+                    <a href="pages/favoritos.html"><img src="images/corazon.png" alt="Favoritos"> </a>
+                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="images/usuario.png" alt="Iniciar Sesion/Registrarte">
+                    </button>
+                    <a href=""><img src="images/carrito.png" alt="Carrito"></a>    
                 </div>
-                </div>
-
-                </div>
-
                 
 
-                <!--HAMBURGUESA-->
-
-                
-                    
-                
-
-               
-
-                <!--CONSERVAR ICONOS -->
-
-                <div class="menu-no-phone">
-
-                    <div class="containerBot__ContainerIconos">
-                        <a href="pages/favoritos.html"><img src="images/corazon.png" alt="Favoritos"> </a>
-                        <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="images/usuario.png" alt="Iniciar Sesion/Registrarte">
-                        </button>
-                        <a href=""><img src="images/carrito.png" alt="Carrito"></a>    
-                    </div>
-                    
-
-                </div>
-
-                
-                
             </div>
         </div>
+    </div>
+    <div class="containerBot__ContainerMenu">
+        <nav class="container">
+            <ul class="pad-0">
+                <li>
+                    <a href="pages/categorias.html">Categorias</a>
+                </li>
+                <li>
+                    <a href="pages/armar-pc.html">Arma tu PC</a>
+                </li>
+                <li>
+                    <a href="pages/encontra-Equipo.html">Encontra tu Equipo</a>
+                </li>
+                <li>
+                    <a href="pages/notebooks.html">Notebooks</a>
+                </li>
+                <li>
+                    <a href="pages/ofertas.html">¡Ofertas!</a>
+                </li>
+            </ul>
+        </nav>     
+    </div>
+              
+
+
+
         
-
-
-
-        <div class="containerBot__ContainerMenu">
-            <nav class="container">
-                <ul class="pad-0">
-                    <li>
-                        <a href="pages/categorias.html">Categorias</a>
-                    </li>
-                    <li>
-                        <a href="pages/armar-pc.html">Arma tu PC</a>
-                    </li>
-                    <li>
-                        <a href="pages/encontra-Equipo.html">Encontra tu Equipo</a>
-                    </li>
-                    <li>
-                        <a href="pages/notebooks.html">Notebooks</a>
-                    </li>
-                    <li>
-                        <a href="pages/ofertas.html">¡Ofertas!</a>
-                    </li>
-                </ul>
-            </nav>     
-        </div>
-           
     </header>
 
    <main>
@@ -162,9 +144,9 @@
                     
                 </div>
                 <div class="modal-footer">
-                <input type="button" value="Registrar nueva cuenta">
-                <input type="button" value="Continuar con Facebook">
-                <input type="button" value="Continuar con Google +">                
+                <input type="button" value="Registrar nueva cuenta" class="backgroundRegistrarse">
+                <input type="button" value="Continuar con Facebook" class="backgroundFacebook">
+                <input type="button" value="Continuar con Google +" class="backgroundGoogle">                
                 </div>
             </div>
             </div>
@@ -207,6 +189,7 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
+        
         <section class="containerBanners container">
             <article class="">
                 <div>

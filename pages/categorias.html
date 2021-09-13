@@ -38,7 +38,6 @@
                     </ul>
                 </nav>   
             </div>
-            
             <div class="containerBot container">
                 
                 <a href="../index.html"><img src="../images/LogoBlanco.png" alt="Logo" class="containerBot__Logo"></a>
@@ -161,9 +160,9 @@
                     
                 </div>
                 <div class="modal-footer">
-                <input type="button" value="Registrar nueva cuenta">
-                <input type="button" value="Continuar con Facebook">
-                <input type="button" value="Continuar con Google +">                
+                <input type="button" value="Registrar nueva cuenta" class="backgroundRegistrarse">
+                <input type="button" value="Continuar con Facebook" class="backgroundFacebook">
+                <input type="button" value="Continuar con Google +" class="backgroundGoogle">                
                 </div>
             </div>
             </div>
@@ -227,8 +226,70 @@
                     </li>
                 </ul>
             </div>
+            
             <div class="containerEncabezado">
                 <h1>CATEGORIAS</h1>
+                <div class="dropdown btnListCateg">
+                    <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      CATEGORIAS
+                    </button>
+                    <ul class="dropdown-menu ulListCateg" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            <a href="../pages/ofertas.html">¡OFERTAS!</a>
+                        </li>
+                        <li>
+                            <a href="../pages/encontra-Equipo.html">EQUIPOS ARMADOS</a>
+                        </li>
+                        <li>
+                            <a href="../pages/notebooks.html">NOTEBOOKS Y ACCESORIOS</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">COMBOS ACTUALIZACIÓN</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">MICROPROCESADORES</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">MOTHERBOARDS</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">MEMORIAS RAM</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">PLACAS DE VIDEO</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">MONITORES Y PROYECTORES</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">GABINETES Y FUENTES</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">PERISFERICOS</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">ALMACENAMIENTO</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">SILLAS</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">REFRIGERACIÓN</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">REDES</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">TABLETAS DIGITALIZADORAS</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">CARTUCHOS</a>
+                        </li>
+                        <li>
+                            <a href="../pages/categorias.html">ADAPTADORES/OTROS</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="containerOrdenar">
                     <label for="ordenar">Ordenar por:</label>
                     <select name="ordenar" id="ordenar">
@@ -363,56 +424,59 @@
         </div>   
     </main>
     <footer>
-        <div class="containerFormSuscripcion">
-            <form action="https://formspree.io/f/xknkkdzp"
-            method="POST">
-                <label for="">Recibí las mejores ofertas en tu e-mail</label>
-                <input type="text" name="Nombre" id="entrada_Nombre" placeholder="  Ingresa tu nombre" class="inputText">
-                <input type="email" name="Email" id="entrada_Email" placeholder="   Ingresa tu email" class="inputText">
-                <button>Suscribite</button>
-            </form>
+        <div class="containerBackground">
+            <div class="containerFormSuscripcion container">
+                <form action="https://formspree.io/f/xknkkdzp"
+                method="POST">
+                    <label for="">Recibí las mejores ofertas en tu e-mail</label>
+                    <input type="text" name="Nombre" id="entrada_Nombre" placeholder="  Ingresa tu nombre" class="inputText">
+                    <input type="email" name="Email" id="entrada_Email" placeholder="   Ingresa tu email" class="inputText">
+                    <button>Suscribite</button>
+                </form>
+            </div>
         </div>
-        <section class="footer__containerAyuda">
-            <article>
+        <section class="footer__containerAyuda row">
+            <article class="col-4">
                 <h3>Información</h3>
                 <p> Realizá tu compra online y recibila en tu domicilio o retirá por nuestro local en Almagro
                     <br>
                     Atención telefónica: (011) 7700-0348
                     <br>
-                    Whatsapp: Comprar54 9 11-2391-4759</p>
-                <h4>Menu</h4>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="../pages/categorias.html">Tienda</a>
-                        </li>
-                        <li>
-                            <a href="../pages/ofertas.html">Ofertas</a>
-                        </li>
-                        <li>
-                            <a href="https://www.google.com/maps" target="_blank">Sucursales</a>
-                        </li>
-                    </ul>
-                </nav>
-
+                    Whatsapp: +54 9 11-2391-4759</p>
+                <div class="footer__containerAyuda--Menu">
+                    <h4>Menu</h4>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="../pages/categorias.html">Tienda</a>
+                            </li>
+                            <li>
+                                <a href="../pages/ofertas.html">Ofertas</a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/maps" target="_blank">Sucursales</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>    
             </article>
-            <article>
+            <article class="col-4">
                 <h3 id="Nosotros">Nosotros</h3>
                 <p> En Gamasoft buscamos destacar por nuestro conocimiento e intentamos establecernos
                      como la opción ideal para sus compras de tecnología. 
                      Todos nuestros vendedores se encuentran altamente 
                     capacitados para asesorarlo y ofrecerle exactamente lo que necesita.</p>
             </article>
-            <article>
+            <article class="col-4">
                 <h3>Contactos</h3>
                 <p> E-mail: ventas@gamasoft.com.ar
                     <br>
                     Teléfono: (011) 7700-0348
                     <br>
-                    Whatsapp: Comprar54 9 11-2391-4759
+                    Whatsapp: +54 9 11-2391-4759
                     <br>
                     Atención Online: Lunes a viernes de 09 a 18 hs. Sábados de 10 a 13 hs.
                     <br>
@@ -426,17 +490,17 @@
                             <a href="https://www.facebook.com/" target="_blank" ><img src="../images/facebook.png" alt="Icono de Facebook" ></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/"target="_blank"><img src="../images/instagram.png" alt="Icono de instagram"></a>
+                            <a href="https://www.instagram.com/"target="_blank"><img src="../images/instagramColor.png" alt="Icono de instagram"></a>
                         </li>
                         <li>
-                            <a href="https://web.whatsapp.com/" target="_blank"><img src="../images/whatsapp.png" alt="Icono de Whatsapp"></a>
+                            <a href="https://web.whatsapp.com/" target="_blank"><img src="../images/whatsappColor.png" alt="Icono de Whatsapp"></a>
                         </li>
                     </ul>
                 </nav>
             </article>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8NlComprarNtUVF0sA7MsXsP1UyJoMp4YLEuNSfAPComprarJcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
 </html>
