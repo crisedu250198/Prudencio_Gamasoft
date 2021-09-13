@@ -170,27 +170,37 @@
         </div>
         <img src="../images/bannerPC.jpg" alt="bannerPC" class="bannerArmarPc" >
         <div class="containerPresupuesto container">
-            <div class="containerPresupuesto__Top ">
-                <div class="containerPresupuesto__Top--Subtotal">
+            <div class="containerPresupuesto__Top row">
+                <div class="containerPresupuesto__Top--Subtotal col-md-4 col-xs-12">
                     <img src="../images/PC00.jpg" alt="Foto de PC">
-                    <div>
+                    <div class="Subtotal">
                         <h4>Subtotal</h4>
                         <h4>$0</h4>
                     </div>
                 </div>
-                <input type="button" value="Ver Resumen de Compra"><!--Este bton tendra utilidad en Js-->
-                <input type="button" value="Reiniciar Compra"><!--Este bton tendra utilidad en Js-->
+
+                <div class="containerPresupuesto-button col-md-4 col-xs-12">
+                    <input type="button" value="Ver Resumen de Compra"><!--Este bton tendra utilidad en Js-->
+                </div>
+                <div class="containerPresupuesto-buton col-md-4 col-xs-12">
+                    <input type="button" value="Reiniciar Compra"><!--Este bton tendra utilidad en Js-->
+                </div>
+                
             </div>
-            <div class="containerPresupuesto__Mid">
-                <div class="containerPresupuesto__Mid--Componente">
+            <div class="containerPresupuesto__Mid row">
+                <div class="containerPresupuesto__Mid--Componente col-md-4 col-xs-12">
                     <img src="../images/micro.png" alt="Foto de Componente">
                     <h4>MICROPROCESADOR</h4>                             
                 </div>
-                <div class="containerPresupuesto__Mid--Progreso">
+                <div class="containerPresupuesto__Mid--Progreso col-md-4 col-xs-12">
                     <label for="">Paso 1 de 13</label>
                     <progress max="100" value="10"></progress>
                 </div>
-                <input type="button" value="Omitir este componente"><!--Este bton tendra utilidad en Js-->
+
+                <div class="containerPresupuesto__Mid-button col-md-4 col-xs-12">
+                    <input type="button" value="Omitir este componente"><!--Este bton tendra utilidad en Js-->
+                </div>
+                
             </div>
         </div>
         <div class="containerArmarPC container">

@@ -246,8 +246,9 @@ a {
   .containerBanners article {
     border: 2px solid black;
     border-radius: 5px;
-    height: 15rem;
-    width: 100%;
+    max-height: 15rem;
+    object-fit: contain;
+    max-width: 15rem;
     overflow: hidden; }
     .containerBanners article img {
       height: 100%;
@@ -478,14 +479,14 @@ a {
   flex-direction: column;
   margin-top: -4rem;
   position: relative;
-  height: 15rem;
+  height: 100%;
   width: 65%;
   background: white;
   border-radius: 5px 5px 0px 0px;
   box-shadow: 0 2px 2px 0 #575151, 0 3px 1px -2px #575151, 0 1px 5px 0 #575151; }
   .containerPresupuesto input {
     height: 3rem;
-    width: 15rem;
+    width: 100%;
     cursor: pointer;
     border: none;
     outline: none;
@@ -501,6 +502,8 @@ a {
 .containerPresupuesto__Top {
   height: 60%;
   width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -531,6 +534,7 @@ a {
   align-items: center;
   justify-content: space-around;
   color: black;
+  margin-bottom: 2rem;
   height: 40%;
   width: 100%; }
   .containerPresupuesto__Mid label {
@@ -542,7 +546,7 @@ a {
   text-align: center; }
   .containerPresupuesto__Mid--Progreso progress {
     height: 2rem;
-    width: 15rem; }
+    width: 100%; }
 
 .containerPresupuesto__Mid--Componente {
   display: flex;
@@ -551,7 +555,7 @@ a {
   .containerPresupuesto__Mid--Componente img {
     width: 100%;
     object-fit: contain;
-    max-height: 120px;
+    max-height: 50px;
    }
   .containerPresupuesto__Mid--Componente h4 {
     font-size: 1rem;
@@ -675,7 +679,7 @@ a {
   .containerFav article {
     display: flex;
     flex-direction: row;
-    height: 10rem;
+    height: 100%;
     width: 100%;
     border-bottom: 1px solid #666464;
     align-items: center;
@@ -732,8 +736,9 @@ a {
     color: #fff;
     width: 6.5rem; }
   #containerFav--detalle img {
-    height: 120px;
-    width: 120.19231px;
+    max-height: 120px;
+    width: 100%;
+    object-fit: contain;
     margin-right: 1rem; }
 
 #containerFav--check {
@@ -774,11 +779,16 @@ a {
   background-image: url(../background/close.png);}
 
 /* --------------------------------------ESTILOS FOOTER-----------------------------------------------*/
+.containerBackground{
+  width: 100%;
+  background:#05479D;
+}
 .containerFormSuscripcion {
   width: 100%;
   margin-top: 2rem;
-  background:#05479D;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   padding-top: 1rem;
   padding-bottom: 1rem; }
@@ -805,7 +815,8 @@ a {
 
 .footer__containerAyuda {
   display: flex;
-  /*width: 100%;*/
+  width: 100%;
+  margin-left: 0;
   background-image: url(../background/fondoFooter.jpg);
   justify-content: space-around; }
   .footer__containerAyuda h3 {
@@ -839,6 +850,10 @@ a {
 
 /* --------------------------------------ESTILOS RESPONSIVE-----------------------------------------------*/
 @media (max-width: 768px) {
+
+  .containerPresupuesto{
+    width: 100%;
+  }
   
   .containerBot__Logo {
     
@@ -919,6 +934,14 @@ a {
     .containerFormSuscripcion label {
       font-size: 15px;
       padding-right: 0.5rem; }
+    .containerFormSuscripcion input {
+        height: 30px;
+        width: 10rem;}
+    .containerFormSuscripcion button{
+      height: 35px;
+      width: 4rem;
+      font-size: 10px;
+    }     
   .inputText {
     height: 25px;
     width: 12rem; }
@@ -939,6 +962,10 @@ a {
 
     @media (min-width: 769px) and (max-width: 1024px){
 
+    .containerPresupuesto{
+      width: 100%;
+    }
+
   .containerProdCateg article div h5 {
     padding: 5px 8px;
   }
@@ -952,9 +979,89 @@ a {
 
 @media (max-width: 480px) {
 
+  .containerProdCateg article div h5{
+    width: 100%;
+  }
+
+  .containerProdCateg article div button{
+    margin-left: 1rem;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .block--center{
+    display: block;
+    text-align-last: center;
+  }
+
+  .Subtotal{
+    width: 100%;
+    text-align: center;
+  }
+
+  .containerOrdenarArmar select{
+    margin-right: 0;
+  }
+
+  .first-button{
+    margin-bottom: .7rem;
+  }
+  #containerFav--detalle h4{
+    font-size: 1rem;
+  }
+
+  .containerFav article input{
+    font-size: 1rem;
+  }
+
+  #containerFav--detalle h5{
+    font-size: 1rem;
+  }
+
+  .containerFav article{
+    gap: 1rem;
+  }
+
+  #containerFav--detalle{
+    gap:1rem;
+  }
+
+  .containerPresupuesto__Mid--Componente h4{
+    margin-left: 0;
+
+    margin-right: 0;
+  }
+
+  .containerPresupuesto__Mid--Componente img{
+    width: unset;
+  }
+
+  .containerPresupuesto__Mid--Componente{
+    justify-content: center;
+  } 
+
+  .containerPresupuesto__Top{
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 1rem;
+  }
+
+  .containerPresupuesto__Mid{
+    
+    margin-left: 0;
+    margin-right: 0;
+    gap: 1rem;
+  }
+
   .menuResponsive{
     display: block;
   }
+  .btn {
+    padding: .275rem .55rem;
+  }
+  .btn-menu--size {
+    width: 100%;
+    max-height: 15px;}
 
   .menu-no-phone{
     display: none;
@@ -962,8 +1069,12 @@ a {
 
   .containerTop__ListNavLeft{
     padding: 5px;
+    font-size: 10px;
   }
-
+  .containerTop__ListNavLeft img{
+    height: 12px;
+    width: 12px;
+  }
   .containerBot__ContainerMenu ul li{
     padding: 5px;
   }
@@ -971,20 +1082,22 @@ a {
     margin: 0rem 0rem; }
   .containerBot__Logo {
     
-    width: 100px;
-    height: 40px; }
+    width: 70px;
+    height: 30px; }
   .containerBot__Search {
-    margin-left: 0.5rem; }
+    margin-left: -1rem;
+     }
     .containerBot__Search img {
-      width: 16px;
-      height: 16px; }
+      width: 12px;
+      height: 12px; }
   .search__Input {
     width: 10rem;
     height: 1.5rem;
-    font-size: 10px; }
+    font-size: 8px; }
   .search__InputBtn {
-    height: 1.5rem;
-    margin-left: -25px; }
+    height: 0.7rem;
+    margin-left: -20px;
+    margin-top: -0.9rem; }
   .containerBot__ContainerIconos {
     margin-right: 0.3rem;
     margin-left: 0.5rem; }
@@ -1012,13 +1125,13 @@ a {
   
   
     .containerBot__ContainerMenu ul a {
-      font-size: 12px; }
+      font-size: 11px; }
   .containerBanner {
     height: 160px; }
     .containerBanner img {
       height: 160px; }
   .containerBanners {
-    margin: 3rem 1rem; }
+    margin: 3rem 0; }
     .containerBanners article {
       height: 6rem;
       width: 6rem; }
@@ -1047,17 +1160,44 @@ a {
       height: 9.5rem;
       width: 7.5rem; }
       .containerSecciones article img {
-        height: 70px;
+        height: 80px;
         width: 70px;
         padding-top: 1rem; }
+        .containerSecciones div section article h4 {
+          font-size: 14px;
+          margin-bottom: 10px;}  
+          .containerSecciones div section article div h5 {
+            font-size: 14px;
+            padding: 5px 8px;}   
+            .containerSecciones div section article div button {
+              width:70px;
+              height: 30px;
+              font-size: 14px;
+              margin-top: -10px;
+          }
+          .containerSecciones div button {
+            height: 50px;
+            width: 55px;}
+            .containerSecciones div button img {
+              align-items: center;
+              justify-items: center;
+              height: 25px;
+              width: 25px;
+          }
   .containerFormSuscripcion {
     width: 100%;
     margin-top: 2rem;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
+    padding-bottom: 0.5rem; 
+    }
     .containerFormSuscripcion label {
       font-size: 10px;
       padding-right: 0.5rem; }
+    .containerFormSuscripcion input {
+        height: 35px;
+        width: 100%;
+      margin-bottom: 0.5rem;}
+    
   .inputText {
     height: 20px;
     width: 6rem;
@@ -1067,12 +1207,19 @@ a {
     width: 4rem;
     font-size: 10px; }
   .footer__containerAyuda h3 {
-    height: 25px;
+    height: 20px;
     margin-top: 1rem;
-    font-size: 18px; }
+    font-size: 14px; }
   .footer__containerAyuda p {
     margin-top: 1rem;
-   
-    font-size: 10px; }
+    font-size: 8px; }
   .footer__containerAyuda li {
-    font-size: 10px; } }
+    font-size: 9px; }
+  .footer__Redes ul li img {
+    height: 12px;
+    width: 12px;
+    margin-right: 0.5rem;} 
+  }
+  
+  
+  
