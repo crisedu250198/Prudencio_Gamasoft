@@ -63,7 +63,7 @@
                             <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="images/usuario.png" alt="Iniciar Sesion/Registrarte">
                             </button>
-                            <a href=""><img src="images/carrito.png" alt="Carrito"></a>    
+                            <a href="#"><img src="images/carrito.png" alt="Carrito"></a>    
                         </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="images/usuario.png" alt="Iniciar Sesion/Registrarte">
                     </button>
-                    <a href=""><img src="images/carrito.png" alt="Carrito"></a>    
+                    <a href="#"><img src="images/carrito.png" alt="Carrito"></a>    
                 </div>
                 
 
@@ -123,14 +123,15 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="post"> 
+                    <form action="https://formspree.io/f/mwkayppz"
+                    method="POST"> 
                         <div>
                             <h2>Ya soy cliente</h2>
                         </div>
                         <div id="modal-body--input">
                             <label for="">Correo electrónico</label>
                             <br>
-                            <input type="email" name="email_login" id="email_login" placeholder="Ingrese su correo electrónico">
+                            <input type="email" name="_replyto" id="email_login" placeholder="Ingrese su correo electrónico">
                         </div>
                         <div id="modal-body--input">
                             <label for="">Contraseña</label>
@@ -138,7 +139,7 @@
                             <input type="password" name="pass_login" id="pass_login" placeholder="Ingrese su contraseña">
                         </div>
                         <div class="modal-body--button">
-                            <input type="button" value="INGRESAR" >
+                            <input type="submit" value="INGRESAR" >
                         </div>
                     </form>
                     
@@ -290,7 +291,7 @@
                 method="POST">
                     <label for="">Recibí las mejores ofertas en tu e-mail</label>
                     <input type="text" name="Nombre" id="entrada_Nombre" placeholder="  Ingresa tu nombre" class="inputText">
-                    <input type="email" name="Email" id="entrada_Email" placeholder="   Ingresa tu email" class="inputText">
+                    <input type="email" name="_replyto" id="entrada_Email" placeholder="   Ingresa tu email" class="inputText">
                     <button>Suscribite</button>
                 </form>
             </div>
