@@ -351,7 +351,16 @@ a {
     .containerSecciones div button:hover {
       background: #2983BC;;
       transform: scale(1.1, 1.1); }
-
+.containerCuerpoCateg{
+  display: flex;
+  flex-direction: column;
+}
+.pagination{
+  margin-top: 1rem;
+  margin-right: 1rem;
+  justify-content: end;
+  padding: .275rem .55rem;
+}
 .containerCateg {
   display: grid;
   
@@ -960,7 +969,9 @@ a {
     .containerProdCateg{
       grid-template-columns: repeat(2,1fr);
     } 
-    
+    .pagination{
+      font-size: 13px;
+     }
     
     .containerProdCateg article div h5{
 
@@ -1046,8 +1057,24 @@ a {
 
   .containerProdCateg article div h5 {
     padding: 5px 8px;
+    font-size: 1rem;
   }
-
+  .containerProdCateg article div button {
+    width: 70px;
+    height: 30px;
+    font-size: 1rem;
+    margin-top: -5px;
+    margin-right: 1rem;
+}
+.containerFormSuscripcion label {
+  color: white;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+.containerFormSuscripcion input {
+  height: 35px;
+  width: 15rem;
+}
   .search__Input{
     width: 25rem;
   }
@@ -1082,6 +1109,9 @@ a {
     }
     .containerListCateg {
       display: none;
+    }
+    .pagination{
+     font-size: 8px;
     }
     .containerEncabezado h1{
       display: none;
