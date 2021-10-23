@@ -9,7 +9,7 @@ p {
 
 body {
   /*Agregue la tipografia a todos los elementos texto*/
-  font-family: "Roboto","sans-serif";
+  /*font-family: "Roboto","Roboto Mono","Poppins" !important;*/
   font-style: normal;
   background: #f3f3f3; }
 
