@@ -51,84 +51,95 @@
                 <!--Menu responsive-->
 
                 <div class="menuResponsive">
-
                     <button class="btn btn-primary btn-primary--cfg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="../images/hambur.svg" class="btn-menu--size"></button>
-
-            <div class="offcanvas offcanvas-end offcanvas--back" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Menú</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-
-
-                    <div class="containerBot__ContainerIconos">
-                        <a href="../pages/favoritos.html"><img src="../images/corazon.png" alt="Favoritos"> </a>
-                        <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="../images/usuario.png" alt="Iniciar Sesion/Registrarte">
-                        </button>
-                        <a href="#"><img src="../images/carrito.png" alt="Carrito"></a>    
+                    <div class="offcanvas offcanvas-end offcanvas--back" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Menú</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <div class="containerBot__ContainerIconos">
+                            <a href="pages/favoritos.html"><img src="../images/corazon.png" alt="Favoritos">Favoritos</a>
+                            <!--<button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="images/usuario.png" alt="Iniciar Sesion/Registrarte">
+                            </button>-->
+                            <div class="containerBot__ContainerIconos--btn">
+                                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnAcceder">
+                                    <img src="../images/usuario.png" alt="Iniciar Sesion/Registrarte">
+                                    <p>Acceder</p> 
+                                </button>
+                            </div>
+                            <div class="containerBot__ContainerIconos--btn">
+                                <button  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight"><img src="../images/carrito.png" alt="Carrito"> <p>Carrito</p> </button>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                </div>
-                </div>
 
-                </div>
+                 </div>
+            <!--HAMBURGUESA-->
 
-                
+            <!--CONSERVAR ICONOS -->
+            <div class="menu-no-phone">
 
-                <!--HAMBURGUESA-->
-
-                
-                    
-                
-
-               
-
-                <!--CONSERVAR ICONOS -->
-
-                <div class="menu-no-phone">
-
-                    <div class="containerBot__ContainerIconos">
-                        <a href="../pages/favoritos.html"><img src="../images/corazon.png" alt="Favoritos"> </a>
-                        <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="containerBot__ContainerIconos">
+                    <a href="../pages/favoritos.html"><img src="../images/corazon.png" alt="Favoritos">Favoritos</a>
+                    <div class="containerBot__ContainerIconos--btn">
+                        <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnAcceder">
                             <img src="../images/usuario.png" alt="Iniciar Sesion/Registrarte">
+                            <p>Acceder</p> 
                         </button>
-                        <a href="#"><img src="../images/carrito.png" alt="Carrito"></a>    
                     </div>
-                    
-
+                    <div class="containerBot__ContainerIconos--btn">
+                        <button  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight"><img src="../images/carrito.png" alt="Carrito"> <p>Carrito</p> </button>
+                    </div>
+                   
+                    <div class="offcanvas offcanvas-end modalCarrito" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header modalCarrito--Header">
+                            <h5 id="offcanvasRightLabel" ><img src="../images/carrito.png" alt="Carrito"> <p>CARRITO DE COMPRAS</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body modalCarrito--body" >
+                            <div class="modalCarrito--body_Productos" id="carrito">
+                            </div>
+                            <div class="modalCarrito--body_Total" id="Totalcarrito">
+                                <!--<h3>Total: $5555555</h3>
+                                <button>FINALIZAR COMPRA</button>-->
+                                <h3>TU CARRITO ESTA VACIO...</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<a href="#"><img src="images/carrito.png" alt="Carrito">Carrito</a>-->    
                 </div>
-
-                
-                
             </div>
         </div>
+    </div>
+    <div class="containerBot__ContainerMenu">
+        <nav class="container">
+            <ul class="pad-0">
+                <li>
+                    <a href="../pages/categorias.html">Categorias</a>
+                </li>
+                <li>
+                    <a href="../pages/armar-pc.html">Arma tu PC</a>
+                </li>
+                <li>
+                    <a href="../pages/encontra-Equipo.html">Encontra tu Equipo</a>
+                </li>
+                <li>
+                    <a href="../pages/notebooks.html">Notebooks</a>
+                </li>
+                <li>
+                    <a href="../pages/ofertas.html">¡Ofertas!</a>
+                </li>
+            </ul>
+        </nav>     
+    </div>
+              
+
+
+
         
-
-
-
-        <div class="containerBot__ContainerMenu">
-            <nav class="container">
-                <ul class="pad-0">
-                    <li>
-                        <a href="../pages/categorias.html">Categorias</a>
-                    </li>
-                    <li>
-                        <a href="../pages/armar-pc.html">Arma tu PC</a>
-                    </li>
-                    <li>
-                        <a href="../pages/encontra-Equipo.html">Encontra tu Equipo</a>
-                    </li>
-                    <li>
-                        <a href="../pages/notebooks.html">Notebooks</a>
-                    </li>
-                    <li>
-                        <a href="../pages/ofertas.html">¡Ofertas!</a>
-                    </li>
-                </ul>
-            </nav>     
-        </div>
-           
     </header>
     <main>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
